@@ -26,7 +26,7 @@ index - App 			         Webview
 ```
 ### Overflow:
 ```
-The app start with the Launches screen and display the first 20 launches from the API, and get the favorites from the storage.
+The app starts with the Launches screen and displays the first 20 launches from the API, and get the favorites from the storage.
 The user have 4 options:
 1. Click on the heart sign to like / dislike a launch. It will trigger a function (toggleFavoriteId) which will change the state of the favorites and update them in the storage and the UI.
 
@@ -34,26 +34,28 @@ The user have 4 options:
 
 3. Scroll down to see more launches. If the user reaches to the end of the list, new launches will be added to the screen by activate a function(loadData).	
  
-4. Search for launches in the search bar.  New list of launches will be shown in the screen depending on the search query by activate a function(loadData) using debounce function.
+4. Search for launches in the search bar.  New list of launches will be shown in the screen depending on the search query by activate a function(loadData) using debounce function to reduce search requests.
 ```
 
 ### Libraries:
-```
 * async-storage -use to save data(even if the app is close) asynchronously. In this app use for the ids of the favorites.
 * react-navigation - use to moving between screens. In this app use for tab and stack navigators.
 * webview - use to show web pages in mobile. In this app use for opening the wiki pages.
 * react-native-elements - use for the search bar component in the app.
 * react-native-vector-icons/Ionicons - use for the heart Icon in the app.
-```
 
 ## b.
 As far as I'm aware, there is no any bugs in the app
 
 ## c.
--sort alphbetical?
--try build the architecture so there will be less rerenders
--maybe use external libaries to manage states?
--login option?
+### improvments:
+* build the app so there will be less rerenders
+* use external libaries to manage states
+* style
+
+### new features:
+* sort alphbetical
+* login option
 
 
 ## d. 
