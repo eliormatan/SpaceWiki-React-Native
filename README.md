@@ -2,11 +2,9 @@
 
 ## a.
 ### Components: 
-```
 The app contains two tabs screens: LaunchesNavigator and FavoritesNavigator.
 Each of them has two stack screens: Launches / Favorites and LaunchWebView.
-The Launches / Favorites component renders a search bar and LaunchItemList which is a VirtualizedList of LaunchItems.
-```
+The Launches/Favorites component renders a search bar and LaunchItemList which is a VirtualizedList of LaunchItems.
   
 ### Components tree:
 ```
@@ -25,17 +23,24 @@ index - App 			         Webview
 						  Launchitemlist —  Launchitem
 ```
 ### Overflow:
-```
-The app starts with the Launches screen and displays the first 20 launches from the API, and get the favorites from the storage.
+
+The app starts with the Launches screen and displays the first 20 launches from the API, and gets
+the favorites from the storage.
+
 The user have 4 options:
-1. Click on the heart sign to like / dislike a launch. It will trigger a function (toggleFavoriteId) which will change the state of the favorites and update them in the storage and the UI.
+1. Click on the heart sign to like / dislike a launch. It will trigger a function (toggleFavoriteId) which will 
+   change the state of the favorites and update them in the storage and the UI.
 
-2. Click on an entry of launch. It will update the state of the wikiURL which will make the stack navigator to navigate to LaunchWebView screen which shows the relevant url of the entry. Then the user can go back by clicking ‘Back’  button on the top.
+2. Click on an entry of launch. It will update the state of the wikiURL which will make the stack navigator
+   to navigate to LaunchWebView screen which shows the relevant url of the entry. 
+   Then the user can go back by clicking ‘Back’ button on the top.
 
-3. Scroll down to see more launches. If the user reaches to the end of the list, new launches will be added to the screen by activate a function(loadData).	
+3. Scroll down to see more launches. If the user reaches to the end of the list, 
+   new launches will be added to the screen by activate a function(loadData).	
  
-4. Search for launches in the search bar.  New list of launches will be shown in the screen depending on the search query by activate a function(loadData) using debounce function to reduce search requests.
-```
+4. Search for launches in the search bar.  New list of launches will be shown in the screen depending on the search
+   query by activate a function(loadData) using debounce function to reduce search requests.
+
 
 ### Libraries:
 * async-storage -use to save data(even if the app is close) asynchronously. In this app use for the ids of the favorites.
