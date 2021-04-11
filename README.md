@@ -10,19 +10,19 @@ The Launches / Favorites component renders a search bar and LaunchItemList which
   
 ### Components tree:
 ```
-						                      	 Searchbar 
-							                      /
-					                	Launches
-		 			                /	stack	  \			       
-		    FavoritesNavigator			     Launchitemlist —- Launchitem
-		   / tab	 		        \ stack			       
-index--App 			            Webview
-		   \ tab              / stack
-		     LaunchesNavigator 	          Searchbar
-                          \	stack	   /
-						                Favorites
-							                       \			    	
-							                        Launchitemlist --  Launchitem
+						  Searchbar 
+						 /
+					 Launches
+		 		  / stack	 \			       
+		FavoritesNavigator		  Launchitemlist — Launchitem
+	   / tab	          \ stack			       
+index - App 			         Webview
+	   \ tab                  / stack
+		LaunchesNavigator 	          Searchbar
+                                  \ stack	 /
+					Favorites
+						 \			    	
+						  Launchitemlist —  Launchitem
 ```
 ### Overflow:
 ```
